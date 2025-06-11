@@ -1,26 +1,39 @@
 @import "tailwindcss";
+@import "tailwindcss/utilities";
+
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-homepage: #A6BB7E;
+  --background-login-shop-pages: #3C4B0A;
+  --background-info-product: #F8E6C8;
+  --background-info-login: #fff;
+  --default-text: #fff;
+  --highlighted-text: #3C4B0A;
+  --login-text: #000;
+  --button-pages: #677146;
+  --button-login: #3C4B0A;
+
+  --font-julius: 'Julius Sans One', sans-serif;
+  --font-josefin: 'Josefin Slab', serif;
+  --font-josefin_sans: 'Josefin Sans', serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.julius_Sans_One {
+  font-family: var(--font-julius);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.josefin_Slab{
+  font-family: var(--font-josefin);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme inline{
+  --color-background-homepage: var(--background-homepage);
+  --color-background-login-shop-pages: var(--background-login-shop-pages);
+  --color-background-info-product: var(--background-info-product);
+  --color-background-info-login: var(--background-info-login);
+  --color-default-text: var(--default-text);
+  --color-highlighted-text: var(--highlighted-text);
+  --color-login-text: var(--login-text);
+  --color-button-pages: var(--button-pages);
+  --color-button-login: var(--button-login);
 }
