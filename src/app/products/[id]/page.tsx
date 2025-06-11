@@ -9,14 +9,16 @@ export function generateStaticParams() {
 }
 
 type ProductPageProps = {
-  params: { id: string }
+  params: Promise<{ id: string }>
 }
 
 export default async function ProductPage({ params }: ProductPageProps) {
-  const product = products.find((p) => p.id === params.id)
+  const { id } = await params
+
+  const product = products.find(p => p.id === id)
 
   if (!product) {
-    notFound()
+    return notFound()
   }
 
   return <ProductClient product={product} />
