@@ -1,16 +1,25 @@
-import { notFound } from 'next/navigation';
-import { products } from '@/data/products';
-import ProductClient from './productClient';
+import { notFound } from 'next/navigation'
+import { products } from '@/data/products'
+import ProductClient from './productClient'
 
-export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
-  const resolvedParams = await params
-  const id = resolvedParams.id
+export function generateStaticParams() {
+  return products.map(product => ({
+    id: product.id,
+  }))
+}
 
-  const product = products.find(p => p.id === id);
+type ProductPageProps = {
+  params: Promise<{ id: string }>
+}
+
+export default async function ProductPage({ params }: ProductPageProps) {
+  const { id } = await params
+
+  const product = products.find(p => p.id === id)
 
   if (!product) {
-    return notFound();
+    return notFound()
   }
 
-  return <ProductClient product={product} />;
+  return <ProductClient product={product} />
 }

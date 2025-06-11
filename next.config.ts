@@ -3,6 +3,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '/jasminesjuices',
+  assetPrefix: '/jasminesjuices/',
   trailingSlash: true,
   images: {
     unoptimized: true,
