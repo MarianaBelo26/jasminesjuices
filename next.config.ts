@@ -2,11 +2,8 @@
 
 const nextConfig = {
   output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  trailingSlash: true,
   basePath: '/jasminesjuices',
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
