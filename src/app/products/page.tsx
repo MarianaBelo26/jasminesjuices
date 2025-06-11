@@ -60,7 +60,7 @@ export default function PageProducts() {
                 onClick={() => handleAddToCart(prod.id)}
                 className="border border-[#677146] text-default-text font-['julius_Sans_One'] text-[16px] w-[140px] h-[30px] rounded-[20px] mt-[10px] hover:bg-button-pages hover:text-default-text cursor-pointer"
               >
-                Adicionar
+                Add to cart
               </button>
             </div>
           </div>

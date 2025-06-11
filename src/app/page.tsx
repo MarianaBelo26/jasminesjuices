@@ -10,7 +10,7 @@ export default function PageHome() {
         <div className="welcome flex flex-col items-center justify-center h-[100vh]">
           <h1 className="font-['josefin_Slab'] font-bold text-default-text italic text-[28px] md:text-[55px] lg:text-[65px] mt-[72px]">Brazilian Quality</h1>
           <Image
-            src="/img_homepage/caju_homepage_horizontal.png"
+            src="/jasminesjuices/img_homepage/caju_homepage_horizontal.png"
             width={210}
             height={20}
             className="md:w-[415px] lg:w-[390px]"
@@ -34,21 +34,21 @@ export default function PageHome() {
           <h2 className="flex font-[julius_Sans_One] text-[25px] md:text-[35px] lg:text-[50px] text-default-text mt-[80px] ml-[30px]">Items</h2>
           <div className="images_preview_products flex flex-col md:flex-row w-[200px] md:w-[840px] lg:w-[1080px] xl:gap-15 xl:w-[1350px] relative left-[50%] -translate-x-1/2 gap-3">
             <Image
-              src="/juices_img/caju.png"
+              src="/jasminesjuices/juices_img/caju.png"
               width={200}
               height={20}
               className=" lg:w-[280px] xl:w-[340px] h-[290px] md:h-[320px] lg:h-[410px] xl:h-[510px] md:ml-[55px] md:mt-[90px] rounded-[170px]"
               alt="caju juice picture"
             />
             <Image
-              src="/juices_img/caldo_de_cana.png"
+              src="/jasminesjuices/juices_img/caldo_de_cana.png"
               width={200}
               height={20}
               className="lg:w-[280px] xl:w-[340px] h-[290px]  md:h-[320px] lg:h-[410px] xl:h-[510px] md:ml-[55px] md:mt-[90px] rounded-[170px]"
               alt="caldo de cana juice picture"
             />
             <Image
-              src="/juices_img/pitaya.png"
+              src="/jasminesjuices/juices_img/pitaya.png"
               width={200}
               height={20}
               className="lg:w-[280px] xl:w-[340px] h-[290px] md:h-[320px] lg:h-[410px] xl:h-[510px] md:ml-[55px] md:mt-[90px] rounded-[170px]"
