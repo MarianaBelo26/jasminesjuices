@@ -9,9 +9,9 @@ export default function FloatingBottle() {
       <motion.div
         initial={{ y: 0, x: 0, rotate: 0 }}
         animate={{
-          y: [0, -20, 0],
-          x: [0, 5, -5, 0],
-          rotate: [0, 2, -2, 0]
+          y: [0, -30, 0],
+          x: [0, 9, -9, 0],
+          rotate: [0, 5, -5, 0]
         }}
         transition={{
           duration: 4,
@@ -21,7 +21,7 @@ export default function FloatingBottle() {
         className="z-10"
       >
         <Image
-          src="/jasminesjuices/img_homepage/caju_homepage_vertical.png"
+          src="/img_homepage/caju_homepage_vertical.png"
           alt="Garrafa"
           className="md:w-[150px] h-[280px] md:h-[362px] lg:w-[180px] lg:h-[462px] md:ml-[45px] md:mt-[70px]"
           width={110}
