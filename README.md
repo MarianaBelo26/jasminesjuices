@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">🧃 Jasmine's Juices - E-commerce</h1>
 
-## Getting Started
+## 📲 Acesse / Access
 
-First, run the development server:
+**Contatos / Contacts:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [LinkedIn](https://linkedin.com/in/marianabelo26/)
+- [Instagram](https://instagram.com/marianabelo.__)
+- [Portfólio Web (live)](https://marianabelo26.github.io/siteApple/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 Projeto / Project
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🖥️ [Jasmine's Juice](https://jasminesjuice.netlify.app/)
 
-## Learn More
+<p align="center">
+  <img alt="e-commerce Screenshot" src="./jasmine.png" width="60%">
+</p>
 
-To learn more about Next.js, take a look at the following resources:
+Uma landing page responsiva de e-commerce para uma marca de sucos naturais, feita com Next.js e Tailwind CSS.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A responsive e-commerce landing page for a natural juice brand, built with Next.js and Tailwind CSS.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---  
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Tecnologias / Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- HTML5
+- CSS3
+- React
+- Next
+- TypeScript
+- JavaScript
+- Tailwind CSS
+- Git & GitHub
+- Netlify (Deploy)
+
+---
+
+## 📷 Preview
+
+<p align="center">
+  <img src="./preview.gif" width="80%" alt="Website Preview GIF"/>
+</p>
+
+---
+
+## 🤝 Conecte-se / Let's connect!
+
+Sinta-se à vontade para me chamar em qualquer rede para conversarmos sobre projetos, freelas ou oportunidades de trabalho.
+
+Feel free to reach out to me on any platform to talk about projects, freelancing, or job opportunities.
+
+---
+
+## 🪪 Autor / Author
+
+**Mariana Belo**  
+🌍 Front-end Developer  
+📍 Teixeira de Freitas, BA – Brazil  
+📧 marianabelo.dev@gmail.com
+
+---
