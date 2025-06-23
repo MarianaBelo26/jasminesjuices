@@ -1,10 +1,12 @@
-import type { Metadata } from "next";
-import { Julius_Sans_One, Josefin_Slab, Josefin_Sans } from "next/font/google";
+import type { Metadata } from "next"
+import { Julius_Sans_One, Josefin_Slab, Josefin_Sans } from "next/font/google"
 
-import "./globals.css";
-import { Header } from "@/components/header/Header"
+import "./globals.css"
+import { Header } from "@/components/header/page"
+import User from "@/components/header/user"
 import { CartProvider } from "./context/cartContext"
 import CartSidebar from "./cart/cartSidebar/cartSidebar"
+import SessionWrapper from "./SessionWrapper"
 
 const juliusSansOne = Julius_Sans_One({
   subsets: ["latin"],
@@ -39,11 +41,14 @@ export default function RootLayout({
       <body
         className={`${juliusSansOne.variable} ${josefinSlab.variable} ${josefinSans.variable} antialiased`}
       >
-        <CartProvider>
-          <Header />
-          {children}
-          <CartSidebar/>
-        </CartProvider>
+        <SessionWrapper>
+          <CartProvider>
+            <Header />
+            <User></User>
+            {children}
+            <CartSidebar/>
+          </CartProvider>
+        </SessionWrapper>
       </body>
     </html>
   );

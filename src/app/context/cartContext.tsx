@@ -2,7 +2,6 @@
 
 import { createContext, useContext, useState, ReactNode, useEffect } from "react"
 
-
 type Product = {
   id: string;
   name: string;
