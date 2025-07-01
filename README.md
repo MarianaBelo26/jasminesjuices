@@ -6,7 +6,7 @@
 
 - [LinkedIn](https://linkedin.com/in/marianabelo26/)
 - [Instagram](https://instagram.com/marianabelo.__)
-- [Portfólio Web]([https://marianabelo26.github.io/siteApple/](https://marianabelo.netlify.app/)
+- [Portfólio Web](https://marianabelo.netlify.app/)
 
 ---
 
