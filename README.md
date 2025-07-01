@@ -12,7 +12,7 @@
 
 ## 💻 Projeto / Project
 
-### 🖥️ [Jasmine's Juice](https://jasminesjuice.netlify.app/)
+### 🖥️ [Jasmine's Juice](https://jasminesjuices.vercel.app/)
 
 <p align="center">
   <img alt="e-commerce Screenshot" src="./jasmine.png" width="60%">
@@ -35,7 +35,7 @@ A responsive e-commerce landing page for a natural juice brand, built with Next.
 - JavaScript
 - Tailwind CSS
 - Git & GitHub
-- Netlify (Deploy)
+- Vercel (Deploy)
 
 ---
 
