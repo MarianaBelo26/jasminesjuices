@@ -38,14 +38,18 @@ export const Header = () => {
       router.push("/userpage")
     } else {
       setUserMenuOpen(!userMenuOpen)
+      setMenuOpen(!menuOpen)
     }
   }
 
-  const logout = () => {
+  const logout = async () => {
     setUserMenuOpen(false)
     setLocalUser(null)
     localStorage.removeItem("user")
-    signOut()
+    
+    await signOut({redirect: false})
+    
+    window.location.href = '/'
   }
 
   useEffect(() => {
@@ -87,6 +91,7 @@ export const Header = () => {
       />
 
       {userMenuOpen && <UserMenu ref={menuRef} logout={logout} />}
+
       {menuOpen && (
         <MobileMenu
           user={user}
@@ -94,6 +99,7 @@ export const Header = () => {
           toggleUserMenu={toggleUserMenu}
         />
       )}
+
     </nav>
   )
 }

@@ -41,13 +41,13 @@ export default function PageProducts() {
               <p className="font-['julius_Sans_One'] text-[20px] text-default-text">R$ {prod.price}</p>
               <button
                 onClick={() => router.push(`/products/${prod.id}`)}
-                className="mt-[80px] text-default-text font-['julius_Sans_One'] bg-button-pages text-[16px] w-[238px] h-[30px] rounded-[20px] hover:border hover:border-[#677146] hover:bg-transparent hover:text-default-text cursor-pointer "
+                className="mt-[80px] text-default-text font-['julius_Sans_One'] bg-button-pages text-[16px] w-[170px] h-[30px] rounded-[20px] hover:border hover:border-[#677146] hover:bg-transparent hover:text-default-text cursor-pointer "
               >
                 View Product
               </button>
               <button
                 onClick={() => handleAddToCart(prod.id)}
-                className="border border-[#677146] text-default-text font-['julius_Sans_One'] text-[16px] w-[238px] h-[30px] rounded-[20px] hover:bg-button-pages hover:text-default-text cursor-pointer"
+                className="border border-[#677146] text-default-text font-['julius_Sans_One'] text-[16px] w-[170px] h-[30px] rounded-[20px] hover:bg-button-pages hover:text-default-text cursor-pointer"
               >
                 Buy Now
               </button>

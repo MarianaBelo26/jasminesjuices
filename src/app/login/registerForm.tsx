@@ -24,7 +24,7 @@ export default function RegisterForm({signIn}: Props){
                 <label htmlFor="register-ipassword"></label>
               </div>
               <Link href="/"><button type="button" className="border mt-3 py-[3px] w-[52vw] md:w-[260px]   rounded-[2px] bg-button-login text-default-text text-center cursor-pointer">Create Account</button></Link>
-              <p className="pt-2 text-center">ou</p>
+              <p className="pt-2 text-center">or</p>
               <button type="button" className=" flex flex-row justify-center gap-3 border py-[3px] w-[70%] md:w-[260px] rounded-[2px]  text-center mt-3 cursor-pointer" onClick={() => signIn('google')}>
                 <Image
                   src='/google_icon.png'

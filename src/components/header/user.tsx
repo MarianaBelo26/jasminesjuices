@@ -10,7 +10,7 @@ export default async function User(){
 
   return (
     <main>
-        <div>{session?.user?.name}</div>
+        <div className="hover:underline">{session?.user?.name}</div>
     </main>
   )
 }

@@ -31,26 +31,28 @@ export default function LoginForm() {
     setEmailError('')
     setPassError('')
 
-    if (!email || !pass) {
-      if (!email) setEmailError('Insira seu email')
-      if (!pass) setPassError('insira sua senha')
+    if (email === '' || pass === '') {
+      if (!email) setEmailError('enter your email')
+      if (!pass) setPassError('enter your password')
+      return
     }
 
     if (email !== 'test@user.com') {
-      setEmailError('email inválido')
-      return
+      setEmailError('invalid email')
+      
     }
 
     if (pass !== '12345678') {
-      setPassError('password inválido')
-      return
+      setPassError('invalid password')
+      
     }
 
     if (email === 'test@user.com' && pass === '12345678') {
       localStorage.setItem('user', JSON.stringify({ name: 'User', email }))
 
       router.push('/')
-      router.refresh()
+      window.location.href = '/'
+
     }
   }
 
@@ -77,8 +79,8 @@ export default function LoginForm() {
 
   return (
     <>
-      <main className=" bg-background-login-shop-pages h-[100vh] w-screen flex flex-col justify-center items-center ">
-        <p className="w-[90%] md:w-[40%] text-default-text pb-2 text-center">Site teste, copie e cole os dados abaixo para entrar: <br />Email: test@user.com <br /> Password: 12345678</p>
+      <main className=" bg-background-login-shop-pages h-[100%] w-screen flex flex-col justify-center items-center pt-20 pb-20">
+        <p className="w-[80%] md:w-[40%] text-default-text pb-2 text-center">Test site, copy and paste the data below to log in: | Site teste, copie e cole os dados abaixo para entrar: <br />Email: test@user.com <br /> Password: 12345678</p>
         <div className="bg-background-info-login w-[75%] md:w-[40%] rounded-[10px] pb-[30px]">
           <h2 className="p-6 font-[julius_Sans_One]">Welcome</h2>
           <div className="flex flex-row gap-9 pl-8">
@@ -105,7 +107,7 @@ export default function LoginForm() {
                 type="button"
                 className="border mt-3 py-[3px] w-[70%] md:w-[260px] rounded-[2px] bg-button-login text-default-text text-center cursor-pointer"
                 onClick={login}>Login</button>
-              <p className="pt-2 text-center">ou</p>
+              <p className="pt-2 text-center">or</p>
               <button type="button" className=" flex flex-row justify-center gap-3 border py-[3px] w-[70%] md:w-[260px] rounded-[2px]  text-center mt-3 cursor-pointer" onClick={() => signIn('google')}>
                 <Image
                   src='/google_icon.png'
