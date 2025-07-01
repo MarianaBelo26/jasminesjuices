@@ -90,7 +90,7 @@ export const Header = () => {
         userButtonRef={userButtonRef}
       />
 
-      {userMenuOpen && <UserMenu ref={menuRef} logout={logout} />}
+      {userMenuOpen && <UserMenu ref={menuRef} logout={logout}  />}
 
       {menuOpen && (
         <MobileMenu

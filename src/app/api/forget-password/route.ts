@@ -5,7 +5,7 @@ export async function POST(req: NextRequest){
     const body = await req.json()
     const { email } = body 
 
-    if(!email){
+    if(email === ''){
         return NextResponse.json({message: 'Mandatory e-mail | Email obrigatório'}, {status: 404})
     }
 
