@@ -5,25 +5,39 @@ import { useEffect, useState } from "react"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
+import isValidCardNumber from "./isValidCardNumber"
+
 
 const schema = z.object({
-    personName: z.string().min(3, 'Nome inválido'),
-    sobrenome: z.string().min(3, 'Sobrenome inválido'),
-    adress: z.string().min(3, 'Endereço inválido'),
-    state: z.string().min(2, 'Estado inválido'),
-    city: z.string().min(3, 'Cidade inválido'),
-    codigoPostal: z.string().regex(/^\d{8}$/, 'CEP inválido'),
-    number: z.string().min(1, 'Número inválido').max(6, 'Número inválido'),
-    phone: z.string().regex(/^\(\d{2}\)\d{5}-\d{4}$/, 'telefone inválido'),
+    personName: z.string().min(3, 'Digite um nome válido'),
+    sobrenome: z.string().min(3, 'Digite um sobrenome válido'),
+    adress: z.string().min(3, 'Digite um endereço válido'),
+    state: z.string().min(2, 'Digite um estado válido'),
+    city: z.string().min(3, 'Digite uma cidade válido'),
+    codigoPostal: z.string().regex(/^\d{8}$/, 'Digite um CEP válido'),
+    number: z.string().min(1, 'Digite um Número inválido').max(6, 'Digite um número válido'),
+    phone: z.string().regex(/^\(\d{2}\)\d{5}-\d{4}$/, 'Digite um telefone válido'),
 
-    cardName: z.string().min(3, 'Nome inválido'),
+    cardName: z.string().min(3, 'Digite um nome válido'),
     cardNumber: z
         .string()
+        .min(1, 'Digite um número de cartão válido')
         .transform((val) => val.replace(/\s/g, ''))
         .refine((val) => /^\d{16}$/
-        .test(val.replace(/\s/g, '')), 'Número inválido'),
-    expiration: z.string().regex(/^\d{2}\/\d{2}$/, 'data de validade inválida'),
-    cvv: z.string().regex(/^\d{3}$/, 'cvv inválido')
+        .test(val.replace(/\s/g, '')), 'Digite um número de cartão válido')
+        .refine((val) => isValidCardNumber(val), 'Número do cartão inválido'),
+    expiration: z
+        .string()
+        .regex(/^\d{2}\/\d{2}$/, 'Digite uma data de validade válida')
+        .refine((val) =>{
+            const [mm, yy] = val.split('/').map(Number)
+            if(mm < 1 || mm > 12) return false
+            const now = new Date()
+            const currentYear = now.getFullYear() % 100
+            const currentMonth = now.getMonth() + 1
+            return yy > currentYear || (yy === currentYear && mm >= currentMonth)
+        }, 'Data de validade expirada'),
+    cvv: z.string().regex(/^\d{3}$/, 'Digite um cvv inválido')
 })
 
 
@@ -149,7 +163,7 @@ export default function Checkout() {
     }, [trigger, errors])
 
     return (
-        <main className="pt-[75px] flex flex-col items-center text-default-text bg-background-homepage h-[100%] font-['julius_Sans_One'] ">
+        <main className="pt-[75px] flex flex-col items-center text-default-text bg-background-homepage h-[100%] font-['julius_Sans_One'] "> <h2 className="bg-highlighted-text m-3">Checkout teste, não insira dados verdadeiros | Checkout test, do not enter real data</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col lg:flex-row lg:w-[90vw] lg:justify-between">
                 {!widthScreen && (
                     <div>
