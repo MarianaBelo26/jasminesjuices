@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.1.1",
     "framer-motion": "^12.15.0",
     "lucide-react": "^0.511.0",
     "next": "15.3.2",
@@ -16,7 +17,10 @@
     "nodemailer": "^6.10.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.5.0"
+    "react-hook-form": "^7.60.0",
+    "react-icons": "^5.5.0",
+    "react-input-mask": "^3.0.0-alpha.2",
+    "zod": "^3.25.74"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -26,6 +30,7 @@
     "@types/nodemailer": "^6.4.17",
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
+    "@types/react-input-mask": "^3.0.6",
     "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
