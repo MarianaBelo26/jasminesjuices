@@ -226,7 +226,7 @@ export default function Checkout() {
                             <label htmlFor="card-number" className="pt-3 pl-[15px] flex flex-col">Número do cartão
                                 <input {...register('cardNumber')} value={cardNumber}
                                     onChange={formatCardNumber} placeholder="0000 0000 0000 0000" className="border rounded-[3px] h-[30px] w-[210px] lg:w-[300px]" autoComplete="cardNumber" />
-                                {errors.cardName && <p className="text-red-700 text-[10px]">{errors.cardNumber.message}</p>}
+                                {errors.cardNumber && <p className="text-red-700 text-[10px]">{errors.cardNumber.message}</p>}
                             </label>
                             <div className="flex justify-around md:justify-between md:pl-4 md:w-[442px] lg:w-[650px]">
                                 <label htmlFor="expiration-date" className="pt-3 flex flex-col">Data de expiração
