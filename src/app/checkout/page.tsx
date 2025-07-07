@@ -163,7 +163,7 @@ export default function Checkout() {
     }, [trigger, errors])
 
     return (
-        <main className="pt-[75px] flex flex-col items-center text-default-text bg-background-homepage h-[100%] font-['julius_Sans_One'] "> <h2 className="bg-highlighted-text m-3">Checkout teste, não insira dados verdadeiros | Checkout test, do not enter real data</h2>
+        <main className="pt-[75px] flex flex-col items-center text-default-text bg-background-homepage h-[100%] w-[100%] font-['julius_Sans_One'] "> <h2 className="bg-highlighted-text m-3">Checkout teste, não insira dados verdadeiros | Checkout test, do not enter real data</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col lg:flex-row lg:w-[90vw] lg:justify-between">
                 {!widthScreen && (
                     <div>
@@ -256,7 +256,7 @@ export default function Checkout() {
                     <hr className={`text-default-text w-[90vw] md:w-[442px] my-6`} />
                 </div>
                 <div>
-                    <div className="flex flex-col w-[280px] md:w-[442px] text-[14px] md:text-[20px] lg:w-[350px] lg:pt-9">
+                    <div className="flex flex-col w-[280px] md:w-[442px] text-[14px] md:text-[20px] lg:w-[300px] lg:pt-9">
                         <div className="flex justify-between">
                             <p className="">Subtotal:</p>
                             <p>$ {subtotal.toFixed(2)}</p>
