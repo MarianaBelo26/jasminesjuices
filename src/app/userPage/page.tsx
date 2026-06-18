@@ -15,6 +15,7 @@ export default function UserPage() {
 
   const [localUser, setLocalUser] = useState<{ name: string, email: string } | null>(null)
 
+  
   useEffect(() => {
     const storedUser = localStorage.getItem("user")
     if (storedUser) {
