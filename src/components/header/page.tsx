@@ -17,6 +17,7 @@ export const Header = () => {
   const router = useRouter()
 
   const { data: session } = useSession()
+  
   const [localUser, setLocalUser] = useState<{ name: string, email: string } | null>(null)
   const [userMenuOpen, setUserMenuOpen] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)

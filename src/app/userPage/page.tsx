@@ -1,23 +1,34 @@
 'use client'
 
-import { signOut } from "next-auth/react"
+import { signOut, useSession } from "next-auth/react"
 import Link from "next/link"
 import './account/userProfile/page'
 import './account/orderReturn/page'
 import { useTranslation } from "react-i18next"
+import { useEffect, useState } from "react"
 
 export default function UserPage() {
 
-  const {t} = useTranslation()
-  
-  const storedUser = localStorage.getItem("user")
-  const user = storedUser ? JSON.parse(storedUser) : null
+  const { t } = useTranslation()
+
+  const { data: session } = useSession()
+
+  const [localUser, setLocalUser] = useState<{ name: string, email: string } | null>(null)
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem("user")
+    if (storedUser) {
+      setLocalUser(JSON.parse(storedUser))
+    }
+  }, [])
 
   const logout = async () => {
     localStorage.removeItem("user")
     await signOut({ redirect: false })
     window.location.href = '/'
   }
+
+  const user = session?.user?.name ? { name: session.user.name } : localUser
 
   return (
     <main className="bg-background-homepage flex justify-center items-center min-h-screen">
