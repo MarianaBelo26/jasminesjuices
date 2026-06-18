@@ -2,8 +2,8 @@
 
 
 import { useState } from 'react'
-import ButtonOrders from './orders/page'
-import ButtonReturn from './return/page'
+import ButtonOrders from './orders/order'
+import ButtonReturn from './return/return'
 
 
 
