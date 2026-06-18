@@ -4,11 +4,16 @@ import { signIn } from "next-auth/react"
 import { useState } from "react"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
+import '../../i18n.tsx'
+import { useTranslation } from "react-i18next"
 
 import RegisterForm from "./registerForm"
 import ForgetPassword from "./forgetPassword"
 
 export default function LoginForm() {
+  
+  const {t} = useTranslation()
+
   const [isClicked, setIsClicked] = useState<'login' | 'register'>('login')
   const [openModal, setOpenModal] = useState(false)
   const [email, setEmail] = useState('')
@@ -80,12 +85,12 @@ export default function LoginForm() {
   return (
     <>
       <main className=" bg-background-login-shop-pages h-[100%] w-screen flex flex-col justify-center items-center pt-20 pb-20">
-        <p className="w-[80%] md:w-[40%] text-default-text pb-2 text-center">Test site, copy and paste the data below to log in: | Site teste, copie e cole os dados abaixo para entrar: <br />Email: test@user.com <br /> Password: 12345678</p>
+        <p className=" whitespace-pre-wrap w-[80%] md:w-[40%] text-default-text pb-2 text-center">{t('login.message')} <br />{t('login.userData')}</p>
         <div className="bg-background-info-login w-[75%] md:w-[40%] rounded-[10px] pb-[30px]">
-          <h2 className="p-6 font-[julius_Sans_One]">Welcome</h2>
+          <h2 className="p-6 font-[julius_Sans_One]">{t('login.welcome')}</h2>
           <div className="flex flex-row gap-9 pl-8">
-            <button className={`px-1 cursor-pointer ${isClicked === 'login' ? 'border' : 'border-none'}`} onClick={() => setIsClicked('login')}>Login</button>
-            <button className={`px-1 cursor-pointer ${isClicked === 'register' ? 'border' : 'border-none'}`} onClick={() => setIsClicked('register')}>Register</button>
+            <button className={`px-1 cursor-pointer ${isClicked === 'login' ? 'border' : 'border-none'}`} onClick={() => setIsClicked('login')}>{t('login.loginOption')}</button>
+            <button className={`px-1 cursor-pointer ${isClicked === 'register' ? 'border' : 'border-none'}`} onClick={() => setIsClicked('register')}>{t('login.registerOption')}</button>
           </div>
           <hr className="mx-5 text-gray-300" />
           {isClicked === 'login' && (<div className="login">
@@ -96,18 +101,17 @@ export default function LoginForm() {
               </div>
               {emailError && (<p className="text-[12px] text-red-500 w-[80%] lg:w-[300px] items-start">{emailError}</p>)}
               <div className="border w-[80%] lg:w-[300px]">
-                <input type="password" name="password" id="login-ipassword" placeholder="Password" autoComplete="current-password" className="w-[100%]" onChange={(e) => setPass(e.target.value)} />
+                <input type="password" name="password" id="login-ipassword" placeholder={t('login.password')} autoComplete="current-password" className="w-[100%]" onChange={(e) => setPass(e.target.value)} />
                 <label htmlFor="login-ipassword"></label>
               </div>
               {passError && (
                 <p className="text-[12px] text-red-500 w-[80%] lg:w-[300px] items-start">{passError}</p>
               )}
-              <button className="text-[12px] cursor-pointer" onClick={openModalForgot}>Forget password?</button>
+              <button className="text-[12px] cursor-pointer" onClick={openModalForgot}>{t('login.forgetPassword')}</button>
               <button
                 type="button"
                 className="border mt-3 py-[3px] w-[70%] md:w-[260px] rounded-[2px] bg-button-login text-default-text text-center cursor-pointer"
-                onClick={login}>Login</button>
-              <p className="pt-2 text-center">or</p>
+                onClick={login}>{t('login.buttonLogin')}</button>
               <button type="button" className=" flex flex-row justify-center gap-3 border py-[3px] w-[70%] md:w-[260px] rounded-[2px]  text-center mt-3 cursor-pointer" onClick={() => signIn('google')}>
                 <Image
                   src='/google_icon.png'
@@ -116,7 +120,7 @@ export default function LoginForm() {
                   alt='google icon'
                   className="inline"
                 />
-                Login with Google
+                {t('login.buttonLoginGoogle')}
               </button>
             </form>
           </div>)}

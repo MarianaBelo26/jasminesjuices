@@ -1,0 +1,54 @@
+{
+    "products": {
+        "title": "Produtos",
+        "coin": "R$",
+        "buttonAddToCart": "Adicionar ao carrinho",
+        "buttonBuyNow": "Comprar",
+        "buttonViewProduct": "Ver Produto",
+        "quantity": "Quantidade",
+        "cashew": {
+            "name": "Suco de Caju",
+            "description": "Suco de caju 100% natural - doce e levemente ácido, um sabor único e marcante."
+        },
+        "sugarcane": {
+            "name": "Suco de Cana",
+            "description": "Suco de cana 100% natural – naturalmente doce e energizante."
+        },
+        "dragonfruit": {
+            "name": "Suco de Pitaya",
+            "description": "Suco de pitaya 100% natural – exótico, refrescante e rico em antioxidantes."
+        },
+        "acai": {
+            "name": "Suco de Açaí",
+            "description": "Suco de açaí 100% natural – uma poderosa superfruta, rica em antioxidantes e sabor."
+        },
+        "acerola": {
+            "name": "Suco de Acerola com Laranja",
+            "description": "Suco de acerola com laranja 100% natural – uma combinação deliciosa e rica em vitamina C."
+        },
+        "coconut": {
+            "name": "Água de Coco",
+            "description": "Água de coco 100% natural – hidratante, leve e rica em eletrólitos."
+        },
+        "soursop": {
+            "name": "Suco de Graviola",
+            "description": "Suco de graviola 100% natural – sabor tropical com textura cremosa e rico em nutrientes."
+        },
+        "guarana": {
+            "name": "Suco de Guaraná",
+            "description": "Suco de guaraná 100% natural – naturalmente estimulante, frutado e cheio de energia."
+        },
+        "orange": {
+            "name": "Suco de Laranja",
+            "description": "Suco de laranja 100% natural – clássico, fresco e repleto de vitamina C."
+        },
+        "passionfruit": {
+            "name": "Suco de Maracujá",
+            "description": "Suco de maracujá 100% natural – levemente ácido, refrescante e cheio do sabor tropical brasileiro."
+        },
+        "greenjuice": {
+            "name": "Suco Verde (Couve, Maçã, Abacaxi e Mel)",
+            "description": "Suco verde 100% natural – uma mistura revitalizante de couve, maçã, abacaxi e mel."
+        }
+    }
+}

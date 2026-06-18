@@ -1,0 +1,12 @@
+{
+    "cart": {
+        "titleCartSideBar": "CART",
+        "title": "MY CART",
+        "subtotal": "SUBTOTAL",
+        "viewCart": "VIEW CART",
+        "shipping": "SHIPPING",
+        "shippingValue": "FREE",
+        "checkout": "CHECKOUT",
+        "messageIsEmpty": "Your Your cart is empty"
+    }
+}

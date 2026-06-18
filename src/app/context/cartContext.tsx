@@ -4,7 +4,7 @@ import { createContext, useContext, useState, ReactNode, useEffect } from "react
 
 type Product = {
   id: string;
-  name: string;
+  nameKey: string;
   price: number;
   image: string;
   quantity: number;

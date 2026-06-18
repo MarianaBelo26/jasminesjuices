@@ -1,0 +1,28 @@
+{
+    "checkout": {
+        "messageSiteTest": "Checkout teste, não insira dados verdadeiros",
+        "deliveryAdress": "ENDEREÇO DE ENTREGA",
+        "required": "*CAMPOS OBRIGATÓRIOS",
+        "name": "NOME",
+        "lastName": "SOBRENOME",
+        "postalCode": "CÓDITO POSTAL",
+        "adress": "ENDREÇO",
+        "number": "NÚMERO",
+        "state": "ESTADO",
+        "city": "CIDADE",
+        "phone": "TELEFONE",
+        "payment": "PAGAMENTO",
+        "method": "MÉTODO",
+        "credit": "CRÉDITO",
+        "debit": "DÉBITO",
+        "cardNumber": "NÚMERO DO CARTÃO",
+        "expirationDate": "DATA DE EXPIRAÇÃO",
+        "cvv": "CVV",
+        "placeOrder": "FINALIZAR PEDIDO",
+        "messageFinishTest": "",
+
+        "invalidDataMessage": {
+            "":""
+        }
+    }
+}

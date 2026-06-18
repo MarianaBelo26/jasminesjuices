@@ -1,21 +1,25 @@
 'use client'
 
 import Link from "next/link"
-import React from "react"
+import '../../i18n.tsx'
+import { useTranslation } from "react-i18next"
 
 type Props = {
   pathname: string,
   user: { name?: string | null } | null,
-  toggleUserMenu: () => void
+  toggleUserMenu: () => void 
   userButtonRef: React.RefObject<HTMLParagraphElement | null>
 }
 
 export default function NavLinks({ pathname, user, toggleUserMenu, userButtonRef }: Props) {
+
+  const {t} = useTranslation()
+
   return (
     <ul className="hidden md:flex gap-4 md:gap-8 lg:gap-12 font-['josefin_Slab'] font-semibold text-[16px] md:text-[23px] lg:text-[30px] text-default-text cursor-pointer">
       <li className="relative group overflow-hidden">
         <Link href="/products" className="active:opacity-50 transition-opacity">
-          Products
+          {t('nav.products')}
         </Link>
         <span
           className={`absolute left-0 bottom-0 w-full h-[1px] bg-default-text transition-transform duration-300 ${pathname === "/products" ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}
@@ -23,7 +27,7 @@ export default function NavLinks({ pathname, user, toggleUserMenu, userButtonRef
       </li>
       <li className="relative group overflow-hidden">
         <Link href="/cart" className="active:opacity-50 transition-opacity">
-          Cart
+          {t('nav.cart')}
         </Link>
         <span
           className={`absolute left-0 bottom-0 w-full h-[1px] bg-default-text transition-transform duration-300 ${pathname === "/cart" ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}
@@ -40,7 +44,7 @@ export default function NavLinks({ pathname, user, toggleUserMenu, userButtonRef
           </p>
         ) : (
           <Link href="/login" className="active:opacity-50 transition-opacity">
-            Login
+            {t('nav.login')}
           </Link>
         )}
         <span

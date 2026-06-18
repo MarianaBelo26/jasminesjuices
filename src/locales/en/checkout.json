@@ -1,0 +1,24 @@
+{
+    "checkout": {
+        "messageSiteTest": "Checkout test, do not enter real data",
+        "deliveryAdress": "Delivery Adress",
+        "required": "*Required",
+        "name": "Name",
+        "lastName": "Last Name",
+        "postalCode": "Postal Code",
+        "adress": "Adress",
+        "number": "Number",
+        "state": "State",
+        "city": "City",
+        "phone": "Phone",
+        "payment": "Payment",
+        "method": "Method",
+        "credit": "Credit",
+        "debit": "Number",
+        "cardNumber": "Card Number",
+        "expirationDate": "Expiration Date",
+        "cvv": "CVV",
+        "placeOrder": "Place Order",
+        "messageFinishTest": ""
+    }
+}

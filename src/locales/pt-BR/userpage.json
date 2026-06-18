@@ -1,0 +1,18 @@
+{
+    "userpage":{
+        "welcomeMessage":"Olá, ",
+        "myprofile":"Meu Perfil",
+        "ordersReturn":"Pedidos e Devoluções",
+        "creditsRefunds": "Créditos e Reembolsos",
+        "address":"Endereços",
+        "logout": "Deslogar",
+        "buildingPageMessage": "Oops! Nosso pequeno caju ainda está desenvolvendo essa página. Por favor, acesse a página Pedidos e Devoluções! 🚧"
+    },
+    "orders":{
+        "title":"Pedidos e Devoluções",
+        "orders":"Pedidos",
+        "ordersMessage":"Meus pedidos antigos",
+        "returns":"Devoluções",
+        "returnsMessage":"Você não tem devoluções! \n Quando você fizer um pedido, encontrará todas as informações aqui."
+    }
+}

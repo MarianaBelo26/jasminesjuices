@@ -1,0 +1,54 @@
+{
+    "products": {
+        "title": "Products",
+        "coin": "$",
+        "buttonAddToCart": "ADD TO CART",
+        "buttonBuyNow": "BUY NOW",
+        "buttonViewProduct": "VIEW PRODUCT",
+        "quantity": "Quantity",
+        "cashew": {
+            "name": "Cashew Juice",
+            "description": "100% natural cashew juice – sweet and slightly tangy, a unique tropical favorite."
+        },
+        "sugarcane": {
+            "name": "Sugarcane Juice",
+            "description": "100% natural sugarcane juice – naturally sweet and energizing."
+        },
+        "dragonfruit": {
+            "name": "Dragon Fruit Juice",
+            "description": "100% natural dragon fruit juice – exotic, refreshing, and rich in antioxidants."
+        },
+        "acai": {
+            "name": "Acai Juice",
+            "description": "100% natural açaí juice – powerful superfruit, rich in antioxidants and flavor."
+        },
+        "acerola": {
+            "name": "Acerola & Orange Juice",
+            "description": "100% natural acerola and orange juice – a delicious combo, loaded with vitamin C."
+        },
+        "coconut": {
+            "name": "Coconut Water",
+            "description": "100% natural coconut water – hydrating, light, and full of electrolytes."
+        },
+        "soursop": {
+            "name": "Soursop Juice",
+            "description": "100% natural soursop juice – tropical flavor with a creamy texture, rich in nutrients."
+        },
+        "guarana": {
+            "name": "Guaraná Juice",
+            "description": "100% natural guaraná juice – naturally stimulating and fruity, full of energy."
+        },
+        "orange": {
+            "name": "Orange Juice",
+            "description": "100% natural orange juice – classic, fresh, and packed with vitamin C."
+        },
+        "passionfruit": {
+            "name": "Passion Fruit Juice",
+            "description": "100% natural passion fruit juice – tangy, refreshing, and full of tropical vibes."
+        },
+        "greenjuice": {
+            "name": "Green Juice (Kale, Apple, Pineapple & Honey)",
+            "description": "100% natural green juice – a revitalizing blend of kale, apple, pineapple, and honey."
+        }
+    }
+}

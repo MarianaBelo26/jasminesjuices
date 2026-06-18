@@ -8,13 +8,21 @@
   --background-info-product: #F8E6C8;
   --background-info-login: #fff;
   --background-modal-forgot-pass: #000000ce;
-  --border-user-menu: #3C4B0A;
+  --background-account: #A6BB7E;
+
+  --border-user-menu: #A6BB7E;
+
   --default-text: #fff;
   --highlighted-text: #3C4B0A;
   --login-text: #000;
+
   --button-pages: #677146;
   --button-login: #3C4B0A;
+  --button-menu-user: #a1b976; 
+
   --hover-menu-user: #3c4b0a46;
+  
+  --shadow-account: #9eae80;
 
   --font-julius: 'Julius Sans One', sans-serif;
   --font-josefin: 'Josefin Slab', serif;
@@ -35,11 +43,19 @@
   --color-background-info-product: var(--background-info-product);
   --color-background-info-login: var(--background-info-login);
   --color-background-modal-forgot-pass: var(--background-modal-forgot-pass);
+  --color-backgroung-account: var(--background-account);
+
   --color-border-user-menu: var(--border-user-menu);
+
   --color-default-text: var(--default-text);
   --color-highlighted-text: var(--highlighted-text);
   --color-login-text: var(--login-text);
+
   --color-button-pages: var(--button-pages);
   --color-button-login: var(--button-login);
+ --color-button-menu-user: var(--button-menu-user);
+
   --color-hover-menu-user: var(--hover-menu-user);
+
+  --color-shadow-account: var(--shadow-account);
 }

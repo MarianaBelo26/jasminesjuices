@@ -1,0 +1,12 @@
+{
+    "cart": {
+        "titleCartSideBar": "CARRINHO",
+        "title": "MEU CARRINHO",
+        "subtotal": "SUBTOTAL",
+        "viewCart": "Ver Carrinho",
+        "shipping": "Frete", 
+        "shippingValue": "Gratuito",
+        "checkout": "Finalizar",
+        "messageIsEmpty": "Seu carrinho está vazio."
+    }
+}

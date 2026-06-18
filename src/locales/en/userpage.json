@@ -1,0 +1,18 @@
+{
+    "userpage":{
+        "welcomeMessage":"Hello, ",
+        "myprofile":"My Profile",
+        "ordersReturn":"Orders & Return",
+        "creditsRefunds": "Credits & Refunds",
+        "address":"Address",
+        "logout": "Logout",
+        "buildingPageMessage": "Oops! Our cashew is still building this page. Please come Order and Return Page! 🚧"
+    },
+    "orders":{
+        "title":"Orders & Return",
+        "orders":"Orders",
+        "ordersMessage":"My old orders",
+        "returns":"Return",
+        "returnsMessage":"You don't returns. \n When you place an order, you'll find all the information here."
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "login": {
+        "message": " Test site, copy and paste the data below to log in:",
+        "userData": "Email: test@user.com \nPassword: 12345678",
+        "welcome": "Welcome",
+        "loginOption": "Login",
+        "registerOption": "Register",
+        "password": "Password",
+        "forgetPassword": "Forget Password?",
+        "buttonLogin": "login",
+        "buttonLoginGoogle": "Login with Google",
+        "name": "Name",
+        "createAccount": "Create Account",
+        "informationForgetPassword": "Enter your email and we'll send you a link to reset your password.",
+        "resetPassword": "Reset Password",
+        "backToLoginPage": "Back to Login"
+    }
+}

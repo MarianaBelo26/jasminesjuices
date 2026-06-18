@@ -44,7 +44,7 @@ export default function RootLayout({
         <SessionWrapper>
           <CartProvider>
             <Header />
-            <User></User>
+            <User />
             {children}
             <CartSidebar/>
           </CartProvider>

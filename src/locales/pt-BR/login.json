@@ -1,0 +1,18 @@
+{
+    "login": {
+        "message": " Site teste, copie e cole os dados abaixo para entrar:",
+        "userData": "Email: test@user.com \nSenha: 12345678", 
+        "welcome":"Bem Vindo",
+        "loginOption": "Logar",
+        "registerOption": "Registar-se",
+        "password": "Senha",
+        "forgetPassword": "Esqueci a Senha",
+        "buttonLogin": "Logar",
+        "buttonLoginGoogle": "Logar com o Google",
+        "name": "Nome",
+        "createAccount": "Criar conta",
+        "informationForgetPassword": "Insira seu e-mail e enviaremos um link para redefinir sua senha",
+        "resetPassword": "Redefinir Senha",
+        "backToLoginPage": "Voltar ao Login"
+    }
+}
